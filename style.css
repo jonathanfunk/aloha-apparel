@@ -177,7 +177,7 @@ header {
 /* ------ banner & handcrafted ------ */
 
 .banner {
-  background: linear-gradient(rgba(0, 0, 50, 0.4), rgba(0, 0, 150, 0.15)), url(image/banner-girl.png) no-repeat center center, url(image/flower-bkgd.jpg) repeat-x;
+  background: linear-gradient(rgba(0, 0, 50, 0.4), rgba(0, 0, 150, 0.15)), url(images/banner-girl.png) no-repeat center center, url(images/flower-bkgd.jpg) repeat-x;
   background-size: cover, contain;
   background-position-y: 0px, 75px;
   height: 260px;
@@ -216,7 +216,7 @@ header {
 /* ------ signup ------ */
 
 .signup {
-  background: url(image/wave-bkgd.jpg) center bottom no-repeat;
+  background: url(images/wave-bkgd.jpg) center bottom no-repeat;
   color: white;
   margin-bottom: 10px;
   text-shadow: 2px 2px 11px rgba(0, 0, 0, 0.7);
