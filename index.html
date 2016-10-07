@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,12 +10,20 @@
 </head>
 <body>
   <header>
-    <div class="container clear">
+    <div class="container">
       <div class="logo">
-        <img src="images/aloha-logo.svg" />
+        <img src="images/aloha-logo.svg" alt="Aloha Logo" />
       </div>
+      <nav>
+        <ul>
+          <li>About</li>
+          <li>Shop</li>
+          <li>Featured</li>
+          <li>Updated</li>
+        </ul>
+      </nav>
       <div class="cart">
-        <img src="images/cart-icon.svg" />
+        <img src="images/cart-icon.svg" alt="Cart Icon" />
       </div>
     </div>
   </header>
@@ -31,32 +39,67 @@
       <p>Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up for updates below.</p>
     </div>
   </section>
+  <section class="category">
+    <ul>
+      <li class="mens large"><a href="#">Men's</a></li>
+      <li class="trends small"><a href="#">Trends</a></li>
+      <li class="glasses small"><a href="#">Glasses</a></li>
+      <li class="sale small"><a href="#">Sale</a></li>
+      <li class="bags small"><a href="#">Bags</a></li>
+      <li class="womens large"><a href="#">Women's</a></li>
+    </ul>
+  </section>
   <section class="mostloved">
-    <div class="container clear">
+    <div class="container">
       <h2>Most-Loved <span>Products</span></h2>
       <ul>
         <li>
-          <img src="images/stretch-knit-dress.jpg" />
+          <img src="images/stretch-knit-dress.jpg" alt="Stretch Knit Dress" />
           <p>Dresses</p>
           <h3>Stretch Knit Dress</h3>
           <p>$169.00</p>
         </li>
         <li>
-          <img src="images/cotton-blue-shirt.jpg" />
+          <img src="images/cotton-blue-shirt.jpg" alt="Cotton Blue Shirt" />
           <p>Shirts</p>
           <h3>Cotton Blue Shirt</h3>
           <p>$89.00</p>
         </li>
         <li>
-          <img src="images/checked-stretch-dress.jpg" />
+          <img src="images/checked-stretch-dress.jpg" alt="Checked Stretch Dress" />
           <p>Dresses</p>
           <h3>Checked Stretch Dress</h3>
           <p>$129.00</p>
         </li>
         <li>
-          <img src="images/blue-hipster-backpack.jpg" />
+          <img src="images/blue-hipster-backpack.jpg" alt="Blue Hipster Backpack" />
           <p>Bags</p>
           <h3>Blue Hipster Backpack</h3>
+          <p>$69.00</p>
+        </li>
+        <!--New Clothes-->
+        <li>
+          <img src="images/blue-silk-dress.jpg" alt="Blue Silk Dress" />
+          <p>Dresses</p>
+          <h3>Blue Silk Dress</h3>
+          <p>$69.00</p>
+        </li>
+        <li>
+          <img src="images/pink-dotted-dress.jpg" alt="Pink Dotted Dress" />
+          <p>Dresses</p>
+          <h3>Pink Dotted Dress</h3>
+          <p>$69.00</p>
+        </li>
+        <li>
+          <img src="images/demin-overall-shorts.jpg" alt="Demin Overall Shorts" />
+          <p>Shorts</p>
+          <h3>Demin Overall Shorts</h3>
+          <p>$69.00</p>
+        </li>
+        <li>
+          <img src="images/cotton-yellow-tshirt.jpg" alt="Cotton Yellow T-Shirt" />
+          <p>Shirts</p>
+          <h3>Cotton Yellow T-Shirt</h3>
           <p>$69.00</p>
         </li>
       </ul>
@@ -66,21 +109,21 @@
     <div class="container">
       <h2>Sign-up for <span>Updates</span></h2>
       <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
-      <form action="#" method="post">
+      <form method="post">
         <input type="email" name="email" placeholder="Your Email"/>
-        <button type="submit" name="subscribe">Subscribe</button>
+        <button type="submit" name="subscribe" value="Subscribe">Subscribe</button>
       </form>
     </div>
   </section>
   <footer>
-    <div class="container clear">
+    <div class="container">
       <div class="contact">
         <p>&copy; 2016 Aloha Apparel Co.<br>Powered by HTML and CSS.</p>
         <p>604-604-6040 <a href="mailto:info@alohaapparel.com">info@alohaapparel.com</a><p>
         <p><span>1490 W. Broadway<br>Vancouver, BC, Canada</span><p>
       </div>
       <ul class="social">
-        <li><a href="#"><i class="fa fa-facebook"></i><span>Facebook</span></a></li>
+        <li><a href="#"><i class="fa fa-facebook-official"></i><span>Facebook</span></a></li>
         <li><a href="#"><i class="fa fa-twitter"></i><span>Twitter</span></a></li>
         <li><a href="#"><i class="fa fa-instagram"></i><span>Instagram</span></a></li>
         <li><a href="#"><i class="fa fa-pinterest"></i><span>Pinterest</span></a></li>
@@ -88,5 +131,7 @@
       </ul>
     </div>
   </footer>
+  <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery.js"></script>
 </body>
 </html>

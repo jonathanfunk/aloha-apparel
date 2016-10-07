@@ -105,7 +105,7 @@ html {
 }
 
 h1 {
-  font: 3.75rem 'playfair_displayregular';
+  font: 3rem 'playfair_displayregular';
   text-shadow: 2px 2px 11px rgba(0, 0, 0, 0.7);
   }
 
@@ -152,26 +152,21 @@ section {
 
 /* ------ header ------ */
 
-header {
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-  height: 65px;
+header .container {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.logo img {
+header img {
   height: 60px;
 }
 
-.cart img {
-  height: 60px;
-}
-
-.logo {
-  float: left;
-}
-
-.cart {
-  float: right;
+nav li {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #e2574c;
 }
 
 /* ------ banner & handcrafted ------ */
@@ -196,16 +191,83 @@ header {
   text-transform: uppercase;
 }
 
-.handcrafted {
-  border-bottom-width: 1px;
-  border-style: solid;
-  border-color: #d7d7d7;
+/* ------ category ------ */
+
+.category {
+  padding: 0;
+}
+
+.category ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.category li {
+  height: 50vw;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category a {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  font-family: 'ralewaymedium';
+  text-decoration: none;
+}
+
+.small {
+  flex: 0 0 calc(50% - 3px);
+}
+
+.large {
+  flex: 2 0 100%;
+}
+
+.mens {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/mens-category.jpg);
+  background-size: cover;
+}
+
+.trends {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/trends-category.jpg);
+  background-size: cover;
+}
+
+.glasses {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/glasses-category.jpg);
+  background-size: cover;
+}
+
+.sale {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/sale-category.jpg);
+  background-size: cover;
+}
+
+.bags {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/bags-category.jpg);
+  background-size: cover;
+}
+
+.womens {
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/womens-category.jpg);
+  background-size: cover;
 }
 
 /* ------ most loved ------ */
 
+.mostloved ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .mostloved li {
-  width: 100%;
+  flex: 100%;
 }
 
 .mostloved p {
@@ -314,6 +376,7 @@ footer a:hover {
 
 .social i {
   margin-right: .5rem;
+  width: 1rem;
 }
 
 /* ------ media queries ------ */
@@ -328,18 +391,32 @@ footer a:hover {
     background-size: contain, contain;
   }
 
-  .mostloved li {
-    width: 50%;
-    float:left;
+  .category li {
+    height: 25vw;
   }
+
+  .small {
+    flex: 0 0 calc(25% - 3px);
+  }
+
+  .large {
+      flex: 0 0 calc(50% - 3px);
+  }
+
+  .mostloved li {
+    flex: 50%;
+  }
+
+  footer .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .contact {
-    width: auto;
-    float: left;
     text-align: left;
   }
+
   .social {
-    width: auto;
-    float: right;
     text-align: left;
   }
 
@@ -364,7 +441,7 @@ footer a:hover {
   }
 
   .mostloved li {
-    width: 25%;
+    flex: 25%;
   }
 
   .handcrafted .container, .signup .container {
