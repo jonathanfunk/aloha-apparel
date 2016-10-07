@@ -1,10 +1,10 @@
 $(document).ready(function(){
   $('form').on('submit', function(event){
     event.preventDefault();
-    if (($('input[type="email"]').val().length !== 0 )) {
-      alert('Form is valid.');
+    if ( $('input[type="email"]').val() == '' ) {
+      alert('Please enter a valid email address.');
     } else {
-      alert('Form is NOT valid.');
+      alert('Thank you for subscribing!');
     }
   });
 });
