@@ -1,13 +1,6 @@
 $(document).ready(function(){
-  $('form').on('submit', function(event){
-    event.preventDefault();
-    if ( $('input[type="email"]').val() == '' ) {
-      alert('Please enter a valid email address.');
-    } else {
-      alert('Thank you for subscribing!');
-    }
-  });
 
+  // Navigation Smooth Scroll
   var offset = $("header").height();
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -19,6 +12,24 @@ $(document).ready(function(){
         }, 1000);
         return false;
       }
+    }
+  });
+
+  //flickity Options
+  $(function() {
+    $('.products').flickity({
+      cellAlign: 'left',
+      contain: true
+    });
+  });
+
+  // Email Validator
+  $('form').on('submit', function(event){
+    event.preventDefault();
+    if ( $('input[type="email"]').val() == '' ) {
+      alert('Please enter a valid email address.');
+    } else {
+      alert('Thank you for subscribing!');
     }
   });
 

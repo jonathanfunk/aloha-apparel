@@ -275,15 +275,9 @@ nav li:last-child {
 
 /* ------ most loved ------ */
 
-.mostloved ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-}
 
 .mostloved li {
-  flex: 100%;
+  width: 100%;
 }
 
 .mostloved p {
@@ -434,7 +428,7 @@ footer a {
   }
 
   .mostloved li {
-    flex: 50%;
+    width: 50%;
   }
 
   footer .container {
@@ -475,7 +469,7 @@ footer a {
   }
 
   .mostloved li {
-    flex: 25%;
+    width: 25%;
   }
 
   .handcrafted .container, .signup .container {
