@@ -130,25 +130,31 @@ header img {
 
 nav {
   margin: 0 auto;
+  padding: 1rem;
   order: 1;
   border-top: 1px solid #d7d7d7;
   width: 90%;
-}
-
-nav ul {
-  display: flex;
-  justify-content: space-around;
+  text-align: center;
 }
 
 nav li {
+  display: inline-block;
+  margin-right: 1rem;
   text-transform: uppercase;
   color: #e2574c;
-  font-size: .5rem;
   font-weight: 500;
 }
 
-.logo, .cart, nav {
+nav li:last-child {
+  margin: 0;
+}
+
+.logo, .cart {
   padding: .5rem;
+}
+
+.cart {
+  text-align: right;
 }
 
 
@@ -371,8 +377,14 @@ footer a:hover {
     font-size: 16px;
   }
 
-  header img {
-    height: 60px;
+  nav {
+    order: 0;
+    flex: 50%;
+    border: 0;
+  }
+
+  .logo, .cart {
+    flex: 10%;
   }
 
   .banner {
@@ -419,6 +431,10 @@ footer a:hover {
 }
 
 @media screen and (min-width: 1240px) {
+
+  header img {
+    height: 60px;
+  }
 
   .container {
     max-width: 1240px;
