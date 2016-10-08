@@ -67,6 +67,10 @@ html {
   color: #2d2d2d;
 }
 
+body {
+  padding-top: 100px;
+}
+
 h1 {
   font: 3rem 'playfair_display', serif;
   text-shadow: 2px 2px 11px rgba(0, 0, 0, 0.7);
@@ -96,6 +100,15 @@ img {
   height: auto;
 }
 
+a {
+  text-decoration: none;
+  color: #e2574c;
+}
+
+a:hover {
+  color: #b64036;
+}
+
 .clear:after {
   content:'';
   clear: both;
@@ -116,12 +129,21 @@ section {
 
 /* ------ header ------ */
 
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: white;
+}
+
 header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 0;
+  height: 100px;
 }
 
 header img {
@@ -141,7 +163,6 @@ nav li {
   display: inline-block;
   margin-right: 1rem;
   text-transform: uppercase;
-  color: #e2574c;
   font-weight: 500;
 }
 
@@ -204,8 +225,11 @@ nav li:last-child {
   color: white;
   text-transform: uppercase;
   font-size: 1.25rem;
-  font-weight: medium;
-  text-decoration: none;
+  font-weight: 500;
+}
+
+.category a:hover {
+  color: #b64036;
 }
 
 .small {
@@ -333,12 +357,7 @@ footer div {
 }
 
 footer a {
-  text-decoration: none;
   color: white;
-}
-
-footer a:hover {
-  color: #b64036;
 }
 
 .contact p {
@@ -375,6 +394,14 @@ footer a:hover {
 
   html {
     font-size: 16px;
+  }
+
+  body {
+    padding-top: 80px;
+  }
+
+  header .container {
+    height: 80px;
   }
 
   nav {
