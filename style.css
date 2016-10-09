@@ -109,10 +109,15 @@ a:hover {
   color: #b64036;
 }
 
-.clear:after {
-  content:'';
-  clear: both;
-  display: table;
+button {
+  width: 100px;
+  height: 30px;
+  border-radius: 25px;
+  border: 0;
+  font-size: .5rem;
+  color: white;
+  background-color: #e2574c;
+  cursor: pointer;
 }
 
 .container {
@@ -179,7 +184,23 @@ nav li:last-child {
 
 .cart {
   text-align: right;
+  position: relative;
 }
+
+.counter {
+position: absolute;
+right: .25rem;
+top: .25rem;
+width: 1.5rem;
+height: 1.5rem;
+text-align: center;
+line-height: 1.5;
+border-radius: 15px;
+background-color: #e2574c;
+color: white;
+display: none;
+}
+
 
 
 /* ------ banner & handcrafted ------ */
@@ -283,7 +304,7 @@ nav li:last-child {
 
 .mostloved p {
   text-transform: uppercase;
-  line-height: 3;
+  line-height: 2.5;
   color: #969696;
 }
 
@@ -323,20 +344,15 @@ input[type="email"]:focus {
   border: 1px solid #969696;
 }
 
-button {
+form button {
   position: absolute;
   top: 0;
   right: 0;
   width: 120px;
   height: 37px;
   margin: 4px;
-  border-radius: 25px;
-  border: 0;
   font-size: 1rem;
   font-weight: 500;
-  color: white;
-  background-color: #e2574c;
-  cursor: pointer;
 }
 
 button:hover {
@@ -475,7 +491,7 @@ footer a {
   }
 
   .handcrafted .container, .signup .container {
-    max-width: 550px;
+    max-width: 575px;
   }
 
 }
