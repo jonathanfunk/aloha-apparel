@@ -35,7 +35,7 @@ $(document).ready(function(){
 
   // Shopping Cart Counter
   $('.addCart').click(function() {
-    $('.counter').show().html(function(i, val) { return val*1+1 });
+    $('.counter').fadeIn('fast').html(function(i, val) { return val*1+1 });
   });
 
 });
