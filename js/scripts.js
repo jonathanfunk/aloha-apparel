@@ -15,14 +15,6 @@ $(document).ready(function(){
     }
   });
 
-  //flickity Options
-  $(function() {
-    $('.products').flickity({
-      cellAlign: 'left',
-      contain: true
-    });
-  });
-
   // Email Validator
   $('form').on('submit', function(event){
     event.preventDefault();

@@ -116,8 +116,12 @@ button {
   border: 0;
   font-size: .5rem;
   color: white;
-  background-color: #e2574c;
   cursor: pointer;
+  background-color: black;
+}
+
+button:hover {
+  background-color: #969696;
 }
 
 .container {
@@ -189,8 +193,8 @@ nav li:last-child {
 
 .counter {
 position: absolute;
-right: .25rem;
-top: .25rem;
+right: .3rem;
+top: .3rem;
 width: 1.5rem;
 height: 1.5rem;
 text-align: center;
@@ -252,7 +256,7 @@ display: none;
 }
 
 .category a:hover {
-  color: #b64036;
+  color: #969696;
 }
 
 .small {
@@ -295,9 +299,10 @@ display: none;
 
 /* ------ most loved ------ */
 
-
-.mostloved li {
+.carousel-cell {
   width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
 }
 
 .mostloved p {
@@ -351,9 +356,10 @@ form button {
   margin: 4px;
   font-size: 1rem;
   font-weight: 500;
+  background-color: #e2574c;
 }
 
-button:hover {
+form button:hover {
   background-color: #b64036;
 }
 
@@ -443,7 +449,7 @@ footer a {
       flex: 0 0 calc(50% - 4px);
   }
 
-  .mostloved li {
+  .carousel-cell {
     width: 50%;
   }
 
@@ -484,7 +490,7 @@ footer a {
     height: 420px;
   }
 
-  .mostloved li {
+  .carousel-cell {
     width: 25%;
   }
 
