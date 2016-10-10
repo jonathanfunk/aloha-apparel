@@ -72,9 +72,8 @@ body {
 }
 
 h1 {
-  font: 3rem 'playfair_display', serif;
-  text-shadow: 2px 2px 11px rgba(0, 0, 0, 0.7);
-  }
+  font-size: 0;
+}
 
 h2 {
   font: italic 2rem 'playfair_display', serif;
@@ -226,6 +225,11 @@ display: none;
 .banner-text p {
   text-transform: uppercase;
 }
+
+.banner-text h2 {
+  font: 2rem 'playfair_display', serif;
+  text-shadow: 2px 2px 11px rgba(0, 0, 0, 0.7);
+  }
 
 /* ------ category ------ */
 
@@ -437,6 +441,10 @@ footer a {
     background-size: contain, contain;
   }
 
+  .banner-text h2 {
+    font-size: 3rem;
+    }
+
   .category li {
     height: 25vw;
   }
@@ -489,6 +497,10 @@ footer a {
   .banner {
     height: 420px;
   }
+
+  .banner-text h2 {
+    font-size: 3.75rem;
+    }
 
   .carousel-cell {
     width: 25%;
