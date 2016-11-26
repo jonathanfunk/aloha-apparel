@@ -326,31 +326,46 @@ nav {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../images/womens-category.jpg);
   background-size: cover; }
 
-/* ------ most loved ------ */
 .carousel-cell {
   width: 100%;
   padding: 2rem;
   box-sizing: border-box; }
+  @media (min-width: 600px) {
+    .carousel-cell {
+      width: 50%; } }
+  @media (min-width: 1240px) {
+    .carousel-cell {
+      width: 25%; } }
 
 .mostloved p {
   text-transform: uppercase;
   line-height: 2.5;
   color: #969696; }
 
-/* ------ signup ------ */
 .signup {
   background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../images/wave-bkgd.jpg) center bottom no-repeat;
   color: white;
   margin-bottom: 10px;
   text-shadow: 2px 2px 11px rgba(0, 0, 0, 0.7); }
-
-.signup p {
-  margin-bottom: 1.75rem; }
+  .signup p {
+    margin-bottom: 1.75rem; }
 
 form {
   position: relative;
   max-width: 375px;
   margin: 0 auto; }
+  form button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 120px;
+    height: 37px;
+    margin: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: #e2574c; }
+    form button:hover {
+      background-color: #b64036; }
 
 input[type="email"] {
   height: 45px;
@@ -361,24 +376,9 @@ input[type="email"] {
   position: relative;
   box-sizing: border-box;
   font: 1rem 'raleway', sans-serif; }
-
-input[type="email"]:focus {
-  outline: 0;
-  border: 1px solid #969696; }
-
-form button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  max-width: 120px;
-  height: 37px;
-  margin: 4px;
-  font-size: 1rem;
-  font-weight: 500;
-  background-color: #e2574c; }
-
-form button:hover {
-  background-color: #b64036; }
+  input[type="email"]:focus {
+    outline: 0;
+    border: 1px solid #969696; }
 
 /* ------ footer ------ */
 footer {
@@ -416,10 +416,6 @@ footer a {
 
 /* ------ media queries ------ */
 @media screen and (min-width: 600px) {
-  /* ------ category for tablet ------ */
-  /* ------ most loved & footer for tablet ------ */
-  .carousel-cell {
-    width: 50%; }
   footer .container {
     display: -ms-flexbox;
     display: flex;
@@ -432,7 +428,3 @@ footer a {
     text-align: left; }
   .social span {
     display: inline; } }
-
-@media screen and (min-width: 1240px) {
-  .carousel-cell {
-    width: 25%; } }

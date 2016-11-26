@@ -1,0 +1,17 @@
+.carousel-cell {
+  width: 100%;
+  padding: 2rem;
+  box-sizing: border-box;
+  @include tablet {
+    width: 50%;
+  }
+  @include desktop {
+    width: 25%;
+  }
+}
+
+.mostloved p {
+  text-transform: uppercase;
+  line-height: 2.5;
+  color: $grey;
+}

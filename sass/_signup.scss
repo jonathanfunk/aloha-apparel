@@ -1,0 +1,45 @@
+.signup {
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../images/wave-bkgd.jpg) center bottom no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../images/wave-bkgd.jpg) center bottom no-repeat;
+  color: white;
+  margin-bottom: 10px;
+  text-shadow: $base-text-shadow;
+  p {
+    margin-bottom: 1.75rem;
+  }
+}
+
+form {
+  position: relative;
+  max-width: 375px;
+  margin: 0 auto;
+  button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 120px;
+    height: 37px;
+    margin: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: $link-color;
+    &:hover {
+      background-color: $link-color-hover;
+    }
+  }
+}
+
+input[type="email"] {
+  height: 45px;
+  width: 100%;
+  border-radius: 25px;
+  border: 0;
+  padding: 0 128px 0 20px;
+  position: relative;
+  box-sizing: border-box;
+  font: 1rem 'raleway', sans-serif;
+  &:focus {
+    outline: 0;
+    border: 1px solid $grey;
+  }
+}

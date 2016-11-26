@@ -6,73 +6,8 @@
 @import "header";
 @import "banner";
 @import "category";
-
-
-/* ------ most loved ------ */
-
-.carousel-cell {
-  width: 100%;
-  padding: 2rem;
-  box-sizing: border-box;
-}
-
-.mostloved p {
-  text-transform: uppercase;
-  line-height: 2.5;
-  color: $grey;
-}
-
-/* ------ signup ------ */
-
-.signup {
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../images/wave-bkgd.jpg) center bottom no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../../images/wave-bkgd.jpg) center bottom no-repeat;
-  color: white;
-  margin-bottom: 10px;
-  text-shadow: $base-text-shadow
-}
-
-.signup p {
-  margin-bottom: 1.75rem;
-}
-
-form {
-  position: relative;
-  max-width: 375px;
-  margin: 0 auto;
-}
-
-input[type="email"] {
-  height: 45px;
-  width: 100%;
-  border-radius: 25px;
-  border: 0;
-  padding: 0 128px 0 20px;
-  position: relative;
-  box-sizing: border-box;
-  font: 1rem 'raleway', sans-serif;
-}
-
-input[type="email"]:focus {
-  outline: 0;
-  border: 1px solid $grey;
-}
-
-form button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  max-width: 120px;
-  height: 37px;
-  margin: 4px;
-  font-size: 1rem;
-  font-weight: 500;
-  background-color: $link-color;
-}
-
-form button:hover {
-  background-color: $link-color-hover;
-}
+@import "mostloved";
+@import "signup";
 
 /* ------ footer ------ */
 
@@ -122,24 +57,6 @@ footer a {
 
 @media screen and (min-width: 600px) {
 
-
-  /* ------ category for tablet ------ */
-
-  .category li {
-  }
-
-  .small {
-  }
-
-  .large {
-  }
-
-  /* ------ most loved & footer for tablet ------ */
-
-  .carousel-cell {
-    width: 50%;
-  }
-
   footer .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -162,12 +79,5 @@ footer a {
     display: inline;
   }
 
-}
-
-@media screen and (min-width: 1240px) {
-
-  .carousel-cell {
-    width: 25%;
-  }
 
 }
