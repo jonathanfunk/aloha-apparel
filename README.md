@@ -8,7 +8,8 @@ This website is for a Hawaiian themed clothing store. The objective for this pro
 ## Technology
 * Atom Text Editor
 * HTML5
-* CSS3
+* Gulp
+* CSS3/Sass/SCSS
 * Responsive Web design
 * jQuery
 * Command Line Interface
@@ -18,5 +19,7 @@ This website is for a Hawaiian themed clothing store. The objective for this pro
 I'm no stranger when it comes to html and css but I've learned some tricks and practices which I feel are very valuable. This project came with challenges but it always feel good to solve the problem. My favorite part about this project is learning how to use the mobile-first approach. This is a method I would like to adapt to my future projects. Command Line Interface and Git/Github are very new to me but I was able to learn quickly.
 
 Once I got those out of the way I added more features. I used flexbox in the header, footer and the category grid for alignment. I think it's a very nifty tool. With jQuery, I incorporated navigation smooth scrolling, email alert box, "Add to Card" counter, and image gallery.
+
+Once I got comfortable working with Gulp and Sass in my future projects, I've decided to come back and incorporate Sass, variables and mixins into this project and minify my files with Gulp.
 
 [Link](https://jonathanfunk.github.io/aloha-apparel/) to website.
