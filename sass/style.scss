@@ -5,99 +5,8 @@
 @import "generic";
 @import "header";
 @import "banner";
+@import "category";
 
-
-/* ------ category ------ */
-
-.category {
-  padding: 0;
-}
-
-.category h2 {
-  font-size: 0;
-  margin: 0;
-}
-
-.category ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-}
-
-.category li {
-  height: 50vw;
-  margin-bottom: 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.category a {
-  color: white;
-  text-transform: uppercase;
-  font-size: 2rem;
-  font-weight: 500;
-  text-shadow: $base-text-shadow
-}
-
-.category a:hover {
-  color: $grey;
-}
-
-.small {
-  width: calc(50% - 4px);
-}
-
-.large {
-  width: 100%;
-}
-
-.mens {
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../images/mens-category.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../images/mens-category.jpg);
-  background-size: cover;
-}
-
-.trends {
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../images/trends-category.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../images/trends-category.jpg);
-  background-size: cover;
-}
-
-.glasses {
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../images/glasses-category.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../images/glasses-category.jpg);
-  background-size: cover;
-}
-
-.sale {
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../images/sale-category.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../images/sale-category.jpg);
-  background-size: cover;
-}
-
-.bags {
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../images/bags-category.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../images/bags-category.jpg);
-  background-size: cover;
-}
-
-.womens {
-  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../images/womens-category.jpg);
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../../images/womens-category.jpg);
-  background-size: cover;
-}
 
 /* ------ most loved ------ */
 
@@ -217,15 +126,12 @@ footer a {
   /* ------ category for tablet ------ */
 
   .category li {
-    height: 25vw;
   }
 
   .small {
-    width: calc(25% - 6px);
   }
 
   .large {
-    width: calc(50% - 4px);
   }
 
   /* ------ most loved & footer for tablet ------ */
