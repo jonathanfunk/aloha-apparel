@@ -1,5 +1,6 @@
 Aloha Apparel
 ======
+![aloha-mockup](https://cloud.githubusercontent.com/assets/20465505/20511823/3120eee2-b030-11e6-9702-e4f177eb6a87.jpg)
 
 ## Project
 This website is for a Hawaiian themed clothing store. The objective for this project is to work with provided assets/design instructions to build a responsive single page website.
