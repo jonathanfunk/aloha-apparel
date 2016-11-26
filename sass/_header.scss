@@ -1,0 +1,88 @@
+/* ------ header ------ */
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: white;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7);
+  .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 0;
+    height: 100px;
+    @include tablet {
+      height: 80px;
+    }
+  }
+  img {
+    height: 40px;
+  }
+}
+
+nav {
+  margin: 0 auto;
+  padding: 1rem;
+  -webkit-box-ordinal-group: 2;
+  -ms-flex-order: 1;
+  order: 1;
+  border-top: 1px solid #d7d7d7;
+  width: 90%;
+  text-align: center;
+  li {
+    display: inline-block;
+    margin-right: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    &:last-child {
+      margin: 0;
+    }
+  }
+  @include tablet {
+    -webkit-box-ordinal-group: 1;
+    -ms-flex-order: 0;
+    order: 0;
+    -webkit-box-flex: 50%;
+    -ms-flex: 50%;
+    flex: 50%;
+    border: 0;
+  }
+}
+
+.logo, .cart {
+  padding: .5rem;
+  @include tablet {
+    -webkit-box-flex: 10%;
+    -ms-flex: 10%;
+    flex: 10%;
+  }
+}
+
+.cart {
+  text-align: right;
+  position: relative;
+}
+
+.counter {
+  position: absolute;
+  right: .3rem;
+  top: .3rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  text-align: center;
+  line-height: 1.5;
+  border-radius: 15px;
+  background-color: $link-color;
+  color: white;
+  display: none;
+}

@@ -1,0 +1,86 @@
+/* ------ generic elements ------ */
+
+html {
+  font: $base-font;
+  color: $base-color;
+  @include tablet {
+    font-size: 16px;
+  }
+}
+
+body {
+  padding-top: 100px;
+  @include tablet {
+    padding-top: 80px;
+  }
+}
+
+h1 {
+  font-size: 0;
+}
+
+h2 {
+  font: italic 2rem $secondary-font;
+  margin-bottom: 1.75rem;
+  span {
+    font-weight: bold;
+    font-style: normal;
+  }
+}
+
+h3 {
+  font: 1.5rem $secondary-font;
+  color: $link-color;
+}
+
+p {
+  line-height: 2;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: $link-color;
+  &:hover {
+    color: $link-color-hover;
+  }
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  border-radius: 25px;
+  border: 0;
+  font-size: .5rem;
+  color: white;
+  cursor: pointer;
+  background-color: black;
+  &:hover {
+  background-color: $grey;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.handcrafted,
+.signup {
+  .container {
+    @include desktop {
+      max-width: 575px;
+    }
+  }
+}
+
+
+section {
+  text-align: center;
+  padding: 4rem 0;
+  width: 100%;
+}
