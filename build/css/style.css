@@ -138,6 +138,9 @@ button {
 .container {
   margin: 0 auto;
   padding: 0 2rem; }
+  @media (min-width: 1240px) {
+    .container {
+      max-width: 1240px; } }
 
 @media (min-width: 1240px) {
   .handcrafted .container,
@@ -173,6 +176,9 @@ header {
         height: 80px; } }
   header img {
     height: 40px; }
+    @media (min-width: 1240px) {
+      header img {
+        height: 60px; } }
 
 nav {
   margin: 0 auto;
@@ -228,19 +234,27 @@ nav {
   height: 260px;
   position: relative;
   color: white; }
+  @media (min-width: 1240px) {
+    .banner {
+      height: 420px;
+      background-size: contain, 200px, contain; } }
 
 .banner-text {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
   width: 100%; }
-
-.banner-text p {
-  text-transform: uppercase; }
-
-.banner-text h2 {
-  font: 2rem "playfair_display", serif;
-  text-shadow: 2px 2px 11px rgba(0, 0, 0, 0.7); }
+  .banner-text p {
+    text-transform: uppercase; }
+  .banner-text h2 {
+    font: 2rem "playfair_display", serif;
+    text-shadow: 2px 2px 11px rgba(0, 0, 0, 0.7); }
+    @media (min-width: 600px) {
+      .banner-text h2 {
+        font-size: 3rem; } }
+    @media (min-width: 1240px) {
+      .banner-text h2 {
+        font-size: 3.75rem; } }
 
 /* ------ category ------ */
 .category {
@@ -398,9 +412,6 @@ footer a {
 
 /* ------ media queries ------ */
 @media screen and (min-width: 600px) {
-  /* ------ banner for tablet ------ */
-  .banner-text h2 {
-    font-size: 3rem; }
   /* ------ category for tablet ------ */
   .category li {
     height: 25vw; }
@@ -425,14 +436,5 @@ footer a {
     display: inline; } }
 
 @media screen and (min-width: 1240px) {
-  header img {
-    height: 60px; }
-  .container {
-    max-width: 1240px; }
-  .banner {
-    height: 420px;
-    background-size: contain, 200px, contain; }
-  .banner-text h2 {
-    font-size: 3.75rem; }
   .carousel-cell {
     width: 25%; } }

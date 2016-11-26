@@ -1,0 +1,35 @@
+/* ------ banner & handcrafted ------ */
+
+.banner {
+  background: -webkit-linear-gradient(rgba(0, 0, 50, 0.4), rgba(0, 0, 150, 0.15)), url(../../images/banner-girl.png) no-repeat bottom center, url(../../images/flower-bkgd.jpg) repeat-x;
+  background: linear-gradient(rgba(0, 0, 50, 0.4), rgba(0, 0, 150, 0.15)), url(../../images/banner-girl.png) no-repeat bottom center, url(../../images/flower-bkgd.jpg) repeat-x;
+  background-size: cover, 130px, cover;
+  height: 260px;
+  position: relative;
+  color: white;
+  @include desktop {
+    height: 420px;
+    background-size: contain, 200px, contain;
+  }
+}
+
+.banner-text {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0,-50%);
+  transform: translate(0,-50%);
+  width: 100%;
+  p {
+    text-transform: uppercase;
+  }
+  h2 {
+    font: 2rem $secondary-font;
+    text-shadow: $base-text-shadow;
+    @include tablet {
+      font-size: 3rem;
+    }
+    @include desktop {
+      font-size: 3.75rem;
+    }
+  }
+}

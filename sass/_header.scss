@@ -27,6 +27,9 @@ header {
   }
   img {
     height: 40px;
+    @include desktop {
+      height: 60px;
+    }
   }
 }
 

@@ -67,6 +67,9 @@ button {
 .container {
   margin: 0 auto;
   padding: 0 2rem;
+  @include desktop {
+    max-width: 1240px;
+  }
 }
 
 .handcrafted,
